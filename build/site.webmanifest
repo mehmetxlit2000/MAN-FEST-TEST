@@ -1,0 +1,21 @@
+{
+  "name": "Quasar Scriptorium DB",
+  "short_name": "QuasarDB",
+  "description": "Quasar projeniz için geliştirilmiş özel web uygulaması.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1e1e2e",
+  "theme_color": "#1e1e2e",
+  "icons": [
+    {
+      "src": "https://i.pinimg.com/736x/24/e1/c3/24e1c3a1f1f38d266142e50e64ea0301.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "https://i.pinimg.com/736x/24/e1/c3/24e1c3a1f1f38d266142e50e64ea0301.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ]
+}

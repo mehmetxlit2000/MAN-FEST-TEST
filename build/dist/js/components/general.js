@@ -1,0 +1,1 @@
+export const QuasarErrorWhom = `<span>Template Bulunamadı</span>`;
