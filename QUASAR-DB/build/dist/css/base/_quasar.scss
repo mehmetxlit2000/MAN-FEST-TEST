@@ -1,0 +1,29 @@
+body[quasar-performance="true"] .__quasar__performance__ {
+  /* 1. Gölgeleri hafiflet veya maliyetsiz hale getir (box-shadow GPU'yu en çok yoran şeydir) */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+
+  /* 2. Backdrop-blur gibi ağır GPU filtrelerini düz renk arka plana çevir */
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background-color: rgba(15, 23, 42, 0.95) !important; /* Transparanlıktan düz renge geçiş */
+
+  /* 3. Animasyonları ve geçişleri sıfırla/kısalt */
+  animation: none !important;
+  transition-duration: 0.05s !important; /* Neredeyse anlık geçiş */
+  transition-property: opacity, background-color !important; /* Sadece ucuz özellikleri transition'a sok */
+
+  /* 4. Filtreleri (drop-shadow, blur, contrast vs.) tamamen kaldır */
+  filter: none !important;
+  -webkit-filter: none !important;
+
+  /* 5. Donanım ivmelenmesini (Hardware Acceleration) optimize et */
+  will-change: auto !important; /* Tarayıcı hafızasını boşaltmak için 'auto' yapılır */
+  transform: none !important;     /* Gereksiz 3D katman oluşturmayı önler */
+  backface-visibility: visible !important;
+
+  /* 6. Yuvarlatılmış hatlar ve border maliyetlerini hafiflet */
+  outline: none !important;
+}
+.__quasar__optic__{
+  transform: translateY(-1px)
+}

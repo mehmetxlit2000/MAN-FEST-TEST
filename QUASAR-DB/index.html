@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+  <!-- ========== 1. KRİTİK: ilk 1024 byte içinde olmalı ========== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- ========== 2. TEMEL SEO ========== -->
+  <title>Sayfa Başlığı | Marka Adı</title>
+  <!-- Description: 120-160 karakter, tıklamaya teşvik eden özet -->
+  <meta name="author" content="QUASAR">
+  <meta name="description" content="Bu sayfanın 120-160 karakterlik, anahtar kelime içeren ve kullanıcıyı tıklamaya teşvik eden özeti.">
+  <!-- Canonical: tekrar eden içerik sorununu önler; mutlak URL kullan -->
+  <link rel="canonical" href="https://www.ornek.com/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Marka Adı">
+  <meta name="generator" content="Elle yazıldı">
+
+  <!-- Çok dilli site varsa hreflang (yoksa silebilirsin) -->
+  <link rel="alternate" hreflang="tr" href="https://www.ornek.com/">
+  <link rel="alternate" hreflang="en" href="https://www.ornek.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.ornek.com/">
+
+  <!-- ========== 3. PERFORMANS: bağlantı ön hazırlığı ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+  <!-- ========== 5. FAVICON & PWA ========== -->
+<!--  <link rel="icon" href="/favicon.ico" sizes="32x32">-->
+<!--  <link rel="icon" href="/icon.svg" type="image/svg+xml">-->
+<!--  <link rel="apple-touch-icon" href="/apple-touch-icon.png">&lt;!&ndash; 180x180 &ndash;&gt;-->
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-- 2) Tarayıcı adres çubuğu rengi (manifest theme_color ile uyumlu olsun) -->
+  <meta name="theme-color" content="#6366f1">
+  <!-- 3) iOS Safari manifest ikonlarını tam desteklemez, bu satır yardımcı olur -->
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <!-- ========== 6. OPEN GRAPH (Facebook, LinkedIn, WhatsApp...) ========== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Marka Adı">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Sayfa Başlığı | Marka Adı">
+  <meta property="og:description" content="Sosyal medyada görünecek kısa açıklama.">
+  <meta property="og:url" content="https://www.ornek.com/">
+  <meta property="og:image" content="https://www.ornek.com/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Görselin kısa açıklaması">
+
+  <!-- ========== 7. TWITTER / X CARD ========== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sayfa Başlığı | Marka Adı">
+  <meta name="twitter:description" content="Sosyal medyada görünecek kısa açıklama.">
+  <meta name="twitter:image" content="https://www.ornek.com/img/og-image.jpg">
+
+  <!-- ========== 8. YAPILANDIRILMIŞ VERİ (JSON-LD) ========== -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.ornek.com/#organization",
+          "name": "Marka Adı",
+          "url": "https://www.ornek.com/",
+          "logo": "https://www.ornek.com/img/logo.png",
+          "sameAs": [
+            "https://www.instagram.com/markaadi",
+            "https://www.linkedin.com/company/markaadi"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.ornek.com/#website",
+          "url": "https://www.ornek.com/",
+          "name": "Marka Adı",
+          "inLanguage": "tr-TR",
+          "publisher": { "@id": "https://www.ornek.com/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.ornek.com/#webpage",
+          "url": "https://www.ornek.com/",
+          "name": "Sayfa Başlığı | Marka Adı",
+          "isPartOf": { "@id": "https://www.ornek.com/#website" }
+        }
+      ]
+    }
+  </script>
+
+  <!-- ========== 9. CSS: kritik CSS inline, gerisi render'ı bloklamadan ========== -->
+  <link rel="stylesheet" href="build/dist/css/main.css">
+
+</head>
+
+<body quasar-performance="false" quasar-observer="'QuasarSynapseTem','#q-synapse-container','build/dist/css/static/synapse.css','build/dist/js/layout/QuasarSynapseCanvas.js'">
+
+<section id="q-synapse-container"></section>
+
+<header id="q-header" quasar-observer="'null','null','null','build/dist/js/layout/QuasarHeaderCanvas.js'">
+  <div class="q-container">
+    <div class="q-edge"></div>
+    <canvas id="q-stars" class="__quasar__performance__" aria-hidden="true"></canvas>
+    <div class="q-content">
+      <div class="q-left">
+        <div class="q-image-group">
+          <svg class="q-header_img" version="1.1" viewBox="0 0 2048 1209" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <!-- Define the linear gradient with brighter colors -->
+              <linearGradient id="vibrantGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop class="color" offset="0%" style="stop-color:#880216; stop-opacity:1"></stop> <!-- Dark Purple -->
+                <stop class="color-2" offset="50%" style="stop-color:#410404; stop-opacity:1"></stop> <!-- Bright Purple -->
+                <stop class="color-3" offset="100%" style="stop-color:rgba(33,1,1,0.99); stop-opacity:1"></stop> <!-- Bright Pink -->
+              </linearGradient>
+            </defs>
+            <defs>
+              <!-- Define the linear gradient with brighter colors -->
+              <linearGradient id="texttGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff0217; stop-opacity:1"></stop> <!-- Dark Purple -->
+                <stop offset="100%" style="stop-color:#c2082a; stop-opacity:1"></stop> <!-- Bright Pink -->
+              </linearGradient>
+            </defs>
+
+            <!-- Apply the vibrant gradient to your paths -->
+            <path transform="translate(981,156)" d="m0 0h43l45 1 41 2 33 3 34 5 36 7 32 8 26 9 21 9 19 10 19 12 17 13 13 12 15 15 13 17 9 13 10 17 9 19 10 26 9 30 8 36 6 37 3 31 1 23 2 17 5 12 17 37 11 25 18 40 16 35 12 27 1 4-6 3-7-1-6-9-12-26-27-60-16-37-6-17 3 12-1 61-2 55-3 38-4 33-6 36-7 30-9 30-10 26-12 25-11 18-9 12-8 10-11 12-13 13-10 8-17 12-15 9-17 9-28 11-27 9-28 7-27 5-37 5-43 4-34 2-28 1h-64l-49-2-42-3-27-3-33-5-29-6-26-7-21-7-31-13-23-12-17-12-10-8-12-11-17-17-11-14-8-11-9-15-13-27-11-29-8-27-8-36-5-31-5-46-13-1-16-5-16-8-8-6-8-8-7-11-5-12-4-17-1-6v-138h13l2 4v30l1 103 2 13 5 13 6 11 8 9 14 8 13 4 13 3-2-32-1-47v-22l1-49 3-52 5-46 6-35 8-34 8-26 10-26 13-27 12-19 9-12 11-13 7-7 6-7 8-7 15-12 15-10 17-10 23-11 28-10 38-10 29-6 41-6 36-3 37-2z" fill="url(#vibrantGradient)"></path>
+            <path transform="translate(1143,498)" d="m0 0h21l19 3 18 6 14 7 3 3v6l-4 7-6-2-14-7-18-5-13-2h-19l-18 4-12 6-9 8-5 10-1 4v18l5 10 8 7 16 8 19 6 36 10 17 7 11 7 7 6 7 11 3 9 1 13-2 12-5 12-6 8-7 7-13 8-15 5-10 2-12 1h-13l-18-2-19-5-17-8-12-9-3-3-1-5 5-8 6 1 10 8 16 8 14 4 23 3h12l17-3 11-4 9-6 7-8 4-10 1-4v-11l-4-11-7-8-14-8-29-9-31-8-17-7-12-8-7-7-5-8-4-13v-17l3-11 5-10 7-9 12-9 11-5 15-4z" fill="url(#texttGradient)"></path>
+            <path transform="translate(194,500)" d="m0 0h14l1 4v129l7-6 21-21 7-8 26-26 7-8 21-21 7-8 13-13 2-3h2l1-3h2l2-4 12-11 3-1h16l-6 7-24 24-7 8-12 12-7 8-25 25-7 8-3 4 9 11 12 14 9 11 11 12 9 11 13 15 9 11 11 12 9 11 3 4v3h-11l-7-4-10-10-9-11-13-14-9-11-12-13-9-11-13-14-9-11-5-4-37 37-7 8-2 4-1 53-2 1h-7l-5-2-1-3v-205z" fill="url(#texttGradient)"></path>
+            <path transform="translate(637,499)" d="m0 0h13l2 1v136l-3 18-5 14-6 11-7 9-8 8-13 8-12 5-12 3-9 1h-13v7h-1l-1-8-13-1-16-5-16-8-8-6-8-8-7-11-5-12-4-17-1-6v-138h13l2 4v30l1 103 2 13 5 13 6 11 8 9 14 8 13 4 13 3 1-3h22l13-4 13-7 7-6 9-13 6-16 2-12 1-12 1-125z" fill="url(#texttGradient)"></path>
+            <path transform="translate(1661,500)" d="m0 0h70l17 1 20 4 15 6 11 7 8 7 9 13 5 14 1 5v30l-5 15-7 11-13 13-10 6-9 4 1 7 14 20 12 17 14 19 5 8-1 2-9 1-7-4-14-19-13-18-12-17-7-9-2-1h-79v22l-1 44-5 3-9-1-1-81 10-1 80-1 15-3 12-5 9-6 9-9 6-13 2-8v-23l-3-11-5-10-9-10-9-6-10-4-19-4-87-2-1-1v-10z" fill="url(#texttGradient)"></path>
+            <path transform="translate(865,499)" d="m0 0h12l4 4 13 28 15 33 36 78 13 28 16 35 1 6h-16l-9-17-15-33-13-29-17-37-15-33-16-35-3-7-13 28-16 36-12 26-15 33-17 37-12 26-3 5h-15l-1-3 15-33 16-35 13-28 14-31 6-12 13-29 12-26 7-14z" fill="url(#texttGradient)"></path>
+            <path transform="translate(1426,499)" d="m0 0h12l5 5 8 14 1 4h2l3 12 11 23 16 36 13 29 19 42 16 35 3 9-6 3-7-1-6-9-12-26-27-60-16-37-6-17 3 12-2 1-8-20-11-25-4-8-3 4-11 25-19 42-17 37-15 33-12 27-9 19-3 3-8 1-7-2 1-7 8-16 9-20 18-39 32-69 17-37 9-20z" fill="url(#texttGradient)"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="q-right">
+        <div class="q-langue-container" onclick="QuasarScriptorium('template','.q-langue-container-relative',null,'build/dist/js/layout/test.js')">
+          <div class="q-image-groups">
+            <img class="q-flag-main q-flag-image" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/960px-Flag_of_Turkey.svg.png?utm_source=tr.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="">
+          </div>
+          <div class="q-langue-container-relative"></div>
+        </div>
+        <div class="q-image-group">
+          <img class="q-user-profile-img" src="https://i.pinimg.com/originals/fa/26/fc/fa26fc3a5eafa8f6c1a2d9b06881502e.gif" alt="profil resmi" fetchpriority="high">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<script type="text/javascript" src="build/dist/js/core/QuasarScriptorium.js" defer></script>
+
+
+</body>
+</html>
