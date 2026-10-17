@@ -1,0 +1,38 @@
+:root {
+  /*
+    oklch(L C H / alpha)
+    L (Lightness): Işıklılık / Parlaklık (%0 - %100)
+    C (Chroma): Doygunluk / Renk Yoğunluğu (0 - ~0.37)
+    H (Hue): Renk Tonu Açısı (0 - 360)
+    Okunuş: "O-Kay El-Si-Eç"
+  */
+
+  /* Ana marka rengimiz */
+  --quasar: oklch(0.618 0.249 23.804);
+
+  /* Göreceli Renkler (Relative Colors) ile Otomatik Varyasyonlar */
+  --quasar-hover: oklch(from var(--quasar) calc(l - 0.08) c h);
+  --quasar-light: oklch(from var(--quasar) calc(l + 0.25) calc(c - 0.1) h);
+  --quasar-dark:  oklch(from var(--quasar) calc(l - 0.20) c h);
+
+  /* Dinamik Şeffaf Varyasyon */
+  --quasar-soft: color-mix(in oklch, var(--quasar) 15%, transparent);
+
+
+  /* Golden Ratio φ - Box  */
+  --gr: 1.618;
+
+  /* typography - Text */                                          
+  --quasar-ratio: 1.924;
+
+  /* Oktav ♪ - Space */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-32: 32px;
+  --space-64: 64px;
+  --space-128: 128px;
+  --space-256: 256px;
+
+}
