@@ -101,7 +101,7 @@ header#q-header {
   position: relative;
   margin-top: var(--space-8); }
   header#q-header .q-container {
-    width: calc(100% - 56px);
+    width: 100%;
     height: auto;
     max-width: 1600px;
     margin: 0 auto;
