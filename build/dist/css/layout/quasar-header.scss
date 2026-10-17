@@ -9,6 +9,9 @@ header#q-header{
     max-width: 1600px;
     margin: 0 auto;
     position:relative;
+    @include lg(){
+     width: 100%;
+    }
     #q-stars {
       position:absolute;
       inset:0;
@@ -27,6 +30,9 @@ header#q-header{
       background-color: transparent;
       position:relative;
       z-index:2;
+      @include lg(){
+        padding: var(--space-4);
+      }
       .q-left{
         flex: var(--quasar-ratio);
         width: auto;
